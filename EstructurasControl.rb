@@ -100,4 +100,27 @@ a =42;
 puts "yes" if a > 10 # se muestra el mensaje unicamente si la condicion es verdadera
 puts "yes" unless a < 10 # se muestra el mensaje unicamente si la condicion es falsa
 
+#Operadores Logicos:
+# se puede utilizar and, or o not pero son evitados para mejor optimizacion
+a = 42;
+b = 8;
+if a > 7 && b < 11
+    puts "Si que mierda"
+end
+
+#||
+
+a = 3;
+b = 5;
+if a == 3 && b > 10
+    puts "bienvenido"
+end
+
+#Not: Revierte el estado de un operando, este es verdadero y lo revierte a falso
+# un if siempre busca un valor verdadero si se programa asi.
+
+a =7;
+puts !(a>5);
+
+
 
