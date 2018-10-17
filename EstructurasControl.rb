@@ -19,7 +19,7 @@ b=9;
 puts a!=b
 
 a=4;
-b =
+b =4;
 
 #Mayores que
 
@@ -121,6 +121,113 @@ end
 
 a =7;
 puts !(a>5);
+
+#Estructura case:
+
+a =2;
+b= 3;
+
+case a && b
+    when 2,3
+        puts "uno"
+    when 2,3
+        puts "dos"
+    when 2,3
+        puts "tres"
+end
+
+#Bucles:
+
+#while se ejecuta repetitivamente un ciclo si la condicion es verdadera
+#Condicion verdadera
+x=0;
+while x < 10
+    puts x
+    x=x+1
+end
+
+#Condicion falsa
+
+a =0;
+until a >10
+    puts "a = #{a}"
+    a +=2;
+end
+
+a =15;
+until a <=10
+    puts "a = #{a}"
+    a -=2;
+end
+
+#Rangos es una secuenccia de numeros
+#el metodo to_a es utilizado para convertir un rango en un arreglo
+
+a=(1..7).to_a
+puts a
+
+a=(56..60).to_a
+puts a
+
+a=('a'..'d').to_a
+puts a
+
+edad = 42;
+
+case edad
+    when 0..14
+        puts "es un niño"
+    when 15..24
+        puts "Adulto Joven"
+    when 25..64
+        puts "adulto"
+    else
+        puts "Anciano"
+    end
+
+x=8
+case x
+    when 0..8
+        puts "1"
+    else 
+        puts "2"
+    end
+
+#ciclos for.
+
+for i in (1..5) do
+    break if i>3
+    puts i
+end
+
+#next se utiliza para realizar saltos en la iteracion del ciclo
+
+for i in (1..5) do
+    next if i%2 ==0
+    puts i
+end
+
+#para sacar los numeros impares se divide y se saca el modulo de cada uno,
+i=2
+i%2==0
+puts i
+
+# existen la declaracion redo para repetir el ciclo
+# retry produce que el bucle empieze nuevamente
+
+#Loop do permite que se ejecute un bloque de codigo hasta que termite con un break.
+
+x =0;
+loop do
+    puts x;
+    x+=1
+    break if x>10;
+end
+
+
+
+
+
 
 
 

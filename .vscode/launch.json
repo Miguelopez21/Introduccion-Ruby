@@ -10,6 +10,13 @@
             "request": "launch",
             "cwd": "${workspaceRoot}",
             "program": "${workspaceRoot}/EstructurasControl.rb"
+        },
+        {
+            "name": "Debug Local",
+            "type": "Ruby",
+            "request": "launch",
+            "cwd": "${workspaceRoot}",
+            "program": "${workspaceRoot}/Practicas.rb"
         }
     ]
 }
