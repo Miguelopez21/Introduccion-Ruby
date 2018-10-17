@@ -17,6 +17,13 @@
             "request": "launch",
             "cwd": "${workspaceRoot}",
             "program": "${workspaceRoot}/Practicas.rb"
+        },
+        {
+            "name": "Debug",
+            "type": "Ruby",
+            "request": "launch",
+            "cwd": "${workspaceRoot}",
+            "program": "${workspaceRoot}/Colecciones.rb"
         }
     ]
 }
