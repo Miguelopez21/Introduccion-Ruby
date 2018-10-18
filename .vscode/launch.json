@@ -4,26 +4,34 @@
     // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+
         {
-            "name": "Debug Local File",
+            "name": "EstructurasControl",
             "type": "Ruby",
             "request": "launch",
             "cwd": "${workspaceRoot}",
             "program": "${workspaceRoot}/EstructurasControl.rb"
         },
         {
-            "name": "Debug Local",
+            "name": "Practicas",
             "type": "Ruby",
             "request": "launch",
             "cwd": "${workspaceRoot}",
             "program": "${workspaceRoot}/Practicas.rb"
         },
         {
-            "name": "Debug",
+            "name": "Colecciones",
             "type": "Ruby",
             "request": "launch",
             "cwd": "${workspaceRoot}",
             "program": "${workspaceRoot}/Colecciones.rb"
+        },
+        {
+            "name": "Metodos",
+            "type": "Ruby",
+            "request": "launch",
+            "cwd": "${workspaceRoot}",
+            "program": "${workspaceRoot}/Metodos.rb"
         }
     ]
 }
