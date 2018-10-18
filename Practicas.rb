@@ -57,23 +57,30 @@ persona[:Estatura] = {
 
 
 persona.each do |item,valor| 
-        
     telefono1 = persona[:Telefono];
     edad1 = persona[:Edad];
     estatura1 = persona[:Estatura]
         if item == :Telefono
-            telefono1.each do |item1,valor1|
-                puts "#{valor1}"
-            end
-            edad1.each do |item1,valor1|
-                puts "#{item1} #{valor1}"
-            end
-            estatura1.each do |item1,valor1|
-                puts "#{valor1}"
-            end
+            telefono1.each {|item1,valor1|puts "#{valor1}"}
+            edad1.each { |item1,valor1| puts "de #{item1} hasta #{valor1}"}
+            estatura1.each  {|item1,valor1|puts "#{valor1}"}
         break          
         end    
         puts "#{valor}"
 end
+
+persona1 = {
+    nombre:'lopez',
+    apellido:'andrey'
+}
+
+persona ={}
+persona.default = 0
+
+persona1.each {
+    |m,r|  persona.default = m
+    print persona[m] =>r  
+}
+
 
 

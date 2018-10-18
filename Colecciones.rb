@@ -194,6 +194,40 @@ puts frecuencia[0]
 
 #frecuencias de letras
 
+=begin
+text = "I amm learnig Ruby and it is fun"
+text.downcase!
+freqs={}
+freqs=default=0
+
+begin text.each_char{ |char| freqs[char] = freqs[char+1] }
+
+("a".."z").each {|x| puts "#{x} : #{freqs[x]}" } 
+=end
+
+s="some text goes here";
+c=0
+s.each_char do |x|
+    c +=1 if x=="e" # primero los acumula la cantidad y luego le suma 1
+end
+puts c
+
+#Optener el ultimo elemento del arreglo:
+#siempre se acumulan los valores.
+
+arr = [1,2,3,4]
+puts arr[-1]
+
+arr = [5,6,8,3]
+arr.reverse!
+arr[1].times {puts "in a loop"}
+
+t = {a:1,b:2,c:3,d:4}
+res = 0
+t.each {|x,y| res += y if y % 2 == 0 } # se acomula el resultado y luego lo suma 
+puts res
+
+
 
 
 
